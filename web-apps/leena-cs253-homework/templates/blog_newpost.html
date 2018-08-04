@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+  <title>Leena's CS 253 Blog</title>
+</head>
+
+<body>
+  <a href="/blog" class="main-title">
+    CS 253 Blog
+  </a>
+
+  <div class="login-area">
+    
+      <a class="login-link" href="/blog/login">login</a>
+      |
+      <a class="login-link" href="/blog/signup">signup</a>
+    
+  </div>
+
+  <div id="content">
+  
+  <h2>new post</h2>
+
+    <form method="post">
+      <label>
+        <div>subject</div>
+        <input type="text" name="subject" value="{{subject}}">
+      </label>
+
+      <label>
+        <div>blog</div>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit">
+    </form>
+
+  </div>
+</body>
+
+</html>

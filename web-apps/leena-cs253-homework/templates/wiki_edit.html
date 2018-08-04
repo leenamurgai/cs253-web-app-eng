@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+  <title>Leena's CS 253 Wiki</title>
+</head>
+
+<body>
+  <div class="login-area">
+    
+    <a class="login-link" href="/wiki/logout">{{username}} logout</a>
+    
+  </div>
+
+  <div id="content">
+  
+    <form method="post">
+      <label>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit" value="Save">
+    </form>
+
+  </div>
+</body>
+
+</html>

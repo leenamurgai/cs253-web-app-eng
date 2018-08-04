@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+  <title>Leena's CS 253 Wiki</title>
+</head>
+
+<body>
+  <div class="login-area">
+    
+    {% if username %}
+    <a class="login-link" href="/wiki/_edit{{page}}">edit</a>
+    |
+    {% endif %}
+    <a class="login-link" href="/wiki/_history{{page}}">history</a>
+
+    {% if username %}
+    <a class="login-link" href="/wiki/logout">{{username}} logout</a>
+    {% else %}
+    <a class="login-link" href="/wiki/login">login</a>
+    {% endif %}
+    
+  </div>
+
+  <div id="content">
+    {{content}}
+  </div>
+</body>
+</html>

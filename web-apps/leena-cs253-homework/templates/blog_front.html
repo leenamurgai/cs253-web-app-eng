@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+
+  <title>Leena's CS 253 Blog</title>
+</head>
+
+<body>
+  <a href="/blog" class="main-title">
+    Leena's CS 253 Blog
+  </a>
+
+  <div class="login-area">
+    
+      <a class="login-link" href="/blog/login">login</a>
+      |
+      <a class="login-link" href="/blog/signup">signup</a>
+    
+  </div>
+
+  <div id="content">
+  
+
+  {% for x in blog_entries %}
+    <div class="post">
+      <div class="post-heading">
+        <div class="post-title">
+          {{x.subject}}
+        </div>
+
+        <div class="post-date">
+          {{x.created.strftime("%d %b %Y %H:%M")}}
+        </div>
+      </div>
+
+      <div class="post-content">
+        {{x.content}}
+      </div>
+    </div>
+    <br><br>
+  {% endfor %}
+
+  <div class="age">
+    queried {{time_elapsed}} seconds ago
+  </div>
+
+  </div>
+</body>
+</html>
