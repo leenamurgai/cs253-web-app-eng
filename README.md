@@ -6,7 +6,7 @@ This course covered all the main building blocks required to build a website. Th
 * [Website](http://leena-cs253-homework.appspot.com/) was built using Google App Engine in Python
 * [Course Notes](https://github.com/leenamurgai/cs253-web-app-eng/blob/master/WebApplicationEngineering.pdf)
 
-Topics:
+**Topics:**
 * HTML - inc. forms, string substitution, escaping
 * URLs - Query parameters and fragments
 * HTTP
